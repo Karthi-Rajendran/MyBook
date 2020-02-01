@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PetstoreCreateComponent implements OnInit {
 
+  enteredValue = '';
+  newStore = 'NO NAME';
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onAddStore() {
+    this.newStore = this.enteredValue;
   }
 
 }
